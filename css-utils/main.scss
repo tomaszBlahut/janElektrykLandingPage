@@ -1,0 +1,339 @@
+$navbar-height: 70px;
+$offer-height: 455px;
+$offer-margin: -25px;
+
+$primary: #070c2b;
+$secondary: #fff1e0;
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-transform: uppercase;
+    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 700;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    margin-top: 21px;
+    margin-bottom: 10.5px;
+}
+
+body {
+    background-color: $secondary;
+}
+
+@media (max-width: 575px) {
+    h3 {
+        font-size: 1.25rem;
+    }
+}
+
+.navbar {
+    text-transform: uppercase;
+    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 700;
+    font-size: 1.2em;
+    height: $navbar-height;
+    background-color: $primary;
+
+    .catch-phrase {
+        color: white;
+
+        @media (max-width: 991px) {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        h3 {
+            margin: 0;
+        }
+    }
+
+    .other-places {
+        display: none;
+
+        @media (min-width: 992px) {
+            display: flex;
+            color: white;
+
+            img {
+                padding: 0 30px;
+            }
+        }
+
+        .olx {
+            filter: hue-rotate(-7deg) saturate(11.5);
+        }
+    }
+}
+
+.intro-header {
+    text-align: center;
+    color: #f8f8f8;
+}
+
+p {
+    font-size: 20px;
+}
+
+.description {
+    font-size: 18px;
+    line-height: 1.5em;
+    margin: 20px;
+}
+
+hr.line {
+    width: 50%;
+    border-top: 2px solid #f8f8f8;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+
+    @media (max-width: 767px) {
+        width: 50%;
+        border-top: 2px solid #f8f8f8;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    }
+}
+
+.intro-header {
+    background: url(../img/bg2.jpg) center center no-repeat fixed;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    height: 100%;
+}
+
+.intro-backdrop {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.intro-message > {
+    h1 {
+        margin: 0;
+        text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.8);
+        font-size: 3.5rem;
+
+        @media (max-width: 767px) {
+            font-size: 3rem;
+        }
+
+        @media (max-width: 576px) {
+            font-size: 2.3rem;
+        }
+
+        @media (max-width: 350px) {
+            font-size: 2.1rem;
+        }
+
+        @media (max-width: 300px) {
+            font-size: 1.8rem;
+        }
+    }
+
+    h2,
+    h3,
+    h4 {
+        text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.8);
+    }
+
+    h2 {
+        margin: 0;
+        font-size: 3rem;
+
+        @media (max-width: 767px) {
+            font-size: 2rem;
+        }
+
+        @media (max-width: 576px) {
+            font-size: 1.5rem;
+        }
+
+        @media (max-width: 350px) {
+            font-size: 1.2rem;
+        }
+    }
+
+    h4 {
+        font-size: 1.5rem;
+
+        @media (max-width: 767px) {
+            font-size: 1.3rem;
+        }
+
+        @media (max-width: 576px) {
+            font-size: 1rem;
+        }
+
+        @media (max-width: 350px) {
+            font-size: 0.8rem;
+        }
+    }
+}
+
+.box > .icon {
+    &:hover {
+        > .image > i {
+            color: #fff !important;
+        }
+
+        > .image {
+            background: $primary;
+        }
+
+        > .info {
+            background: rgba(0, 0, 0, 0.04);
+            border-color: #e0e0e0;
+            color: #fff;
+        }
+    }
+
+    > .image {
+        > i {
+            color: #fff !important;
+        }
+
+        position: relative;
+        z-index: 2;
+        margin: auto;
+        width: 88px;
+        height: 88px;
+        border: 8px solid #fff1e0;
+        line-height: 88px;
+        border-radius: 50%;
+        background: #070c2b;
+        vertical-align: middle;
+    }
+
+    text-align: center;
+    position: relative;
+
+    > {
+        .image > i {
+            font-size: 36px !important;
+        }
+
+        .info {
+            min-height: 230px;
+            margin-top: -24px;
+            background: rgba(0, 0, 0, 0.04);
+            border-radius: 20px;
+            padding: 15px 0 10px;
+
+            @media (max-width: 1200px) {
+                min-height: 280px;
+            }
+
+            @media (max-width: 767px) {
+                min-height: 290px;
+            }
+
+            @media (max-width: 576px) {
+                min-height: unset;
+            }
+        }
+    }
+
+    > .info > {
+        h3.title {
+            font-size: 1.6rem;
+            color: #222;
+            font-weight: 500;
+
+            @media (max-width: 767px) {
+                font-size: 1.3rem;
+            }
+
+            @media (max-width: 576px) {
+                font-size: 1rem;
+            }
+
+            @media (max-width: 350px) {
+                font-size: 0.8rem;
+            }
+        }
+
+        p,
+        ul {
+            font-size: 1.1rem;
+            color: #666;
+            line-height: 1.5em;
+        }
+
+        p {
+            margin: 20px;
+        }
+
+        ul {
+            text-align: start;
+        }
+    }
+}
+
+.offer {
+    margin-top: $offer-margin;
+    height: $offer-height;
+
+    @media (max-width: 575px) {
+        margin-top: 0;
+        min-height: 100vh;
+
+        .container {
+            height: 100%;
+
+            .row {
+                height: 100%;
+            }
+
+            .space {
+                display: none;
+            }
+        }
+    }
+
+    .space {
+        height: 25px;
+    }
+}
+
+.main-info {
+    min-height: 425px;
+    height: calc(100vh - #{$navbar-height} - #{$offer-height} - #{$offer-margin});
+
+    @media (max-width: 1015px) {
+        min-height: 470px;
+    }
+
+    @media (max-width: 576px) {
+        height: calc(100vh - #{$navbar-height});
+    }
+}
+
+.btn {
+    margin-top: 20px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    text-decoration: none;
+    line-height: 1rem;
+    cursor: pointer !important;
+    font-size: inherit;
+    font-weight: 600;
+    background-color: red;
+    padding: 1rem 2rem;
+    border: 1px solid red;
+    color: #fff !important;
+}

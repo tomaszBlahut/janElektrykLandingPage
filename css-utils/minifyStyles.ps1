@@ -1,0 +1,1 @@
+sass --watch .\main.scss:.\main.min.css --style compressed .\animations.css:.\animations.min.css --style compressed --scss
